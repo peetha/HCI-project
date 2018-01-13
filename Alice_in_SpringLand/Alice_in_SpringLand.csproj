@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21D49D25-D645-401D-9DAE-F4288D927EE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Alice_in_SpringLand</RootNamespace>
+    <AssemblyName>Alice_in_SpringLand</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Activity.cs" />
+    <Compile Include="Domain\BaseClass.cs" />
+    <Compile Include="Domain\Flower.cs" />
+    <Compile Include="Domain\Fruit.cs" />
+    <Compile Include="Domain\Holiday.cs" />
+    <Compile Include="Domain\Vegetable.cs" />
+    <Compile Include="View\Activity1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Activity1.Designer.cs">
+      <DependentUpon>Activity1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Activity2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Activity2.Designer.cs">
+      <DependentUpon>Activity2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Activity3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Activity3.Designer.cs">
+      <DependentUpon>Activity3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Activity4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Activity4.Designer.cs">
+      <DependentUpon>Activity4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Apple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Apple.Designer.cs">
+      <DependentUpon>Apple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cherry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Cherry.Designer.cs">
+      <DependentUpon>Cherry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Daisy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Daisy.Designer.cs">
+      <DependentUpon>Daisy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Easter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Easter.Designer.cs">
+      <DependentUpon>Easter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Flower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Flower.Designer.cs">
+      <DependentUpon>Flower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Hyacinth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Hyacinth.Designer.cs">
+      <DependentUpon>Hyacinth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Lilac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Lilac.Designer.cs">
+      <DependentUpon>Lilac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Maze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Maze.Designer.cs">
+      <DependentUpon>Maze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MDay.Designer.cs">
+      <DependentUpon>MDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Onion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Onion.Designer.cs">
+      <DependentUpon>Onion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Peach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Peach.Designer.cs">
+      <DependentUpon>Peach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Pear.Designer.cs">
+      <DependentUpon>Pear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Puzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Puzzle.Designer.cs">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Radish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Radish.Designer.cs">
+      <DependentUpon>Radish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Salad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Salad.Designer.cs">
+      <DependentUpon>Salad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Snowdrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Snowdrop.Designer.cs">
+      <DependentUpon>Snowdrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Spinach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Spinach.Designer.cs">
+      <DependentUpon>Spinach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Strawberry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Strawberry.Designer.cs">
+      <DependentUpon>Strawberry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Traditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Traditions.Designer.cs">
+      <DependentUpon>Traditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Intersection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Intersection.Designer.cs">
+      <DependentUpon>Intersection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Tulip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tulip.Designer.cs">
+      <DependentUpon>Tulip.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Activity1.resx">
+      <DependentUpon>Activity1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Activity2.resx">
+      <DependentUpon>Activity2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Activity3.resx">
+      <DependentUpon>Activity3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Activity4.resx">
+      <DependentUpon>Activity4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Apple.resx">
+      <DependentUpon>Apple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Cherry.resx">
+      <DependentUpon>Cherry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Daisy.resx">
+      <DependentUpon>Daisy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Easter.resx">
+      <DependentUpon>Easter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Flower.resx">
+      <DependentUpon>Flower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Hyacinth.resx">
+      <DependentUpon>Hyacinth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Lilac.resx">
+      <DependentUpon>Lilac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Maze.resx">
+      <DependentUpon>Maze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MDay.resx">
+      <DependentUpon>MDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Onion.resx">
+      <DependentUpon>Onion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Peach.resx">
+      <DependentUpon>Peach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Pear.resx">
+      <DependentUpon>Pear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Puzzle.resx">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Radish.resx">
+      <DependentUpon>Radish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Salad.resx">
+      <DependentUpon>Salad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Snowdrop.resx">
+      <DependentUpon>Snowdrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Spinach.resx">
+      <DependentUpon>Spinach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Strawberry.resx">
+      <DependentUpon>Strawberry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Traditions.resx">
+      <DependentUpon>Traditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Intersection.resx">
+      <DependentUpon>Intersection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Room.resx">
+      <DependentUpon>Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Tulip.resx">
+      <DependentUpon>Tulip.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton_activitati.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_adventure.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton_flori.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton_traditii.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton_fructe.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ziua_mamei.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\original.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26853999_955687241251899_1669669251_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26782011_954940594659897_721754098_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26853513_954940604659896_1583443145_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26854317_955681524585804_706965047_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26906036_954940597993230_172160201_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cherry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daisy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hyacinth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lillac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Onion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Radish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snowdrop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spanich.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strawberry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tradition.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tulip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indicators.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26794288_955862681234355_1384410803_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maze_cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26857396_955873594566597_713430642_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cursor.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
